@@ -595,7 +595,7 @@
 <div id="alreadyScreen">
   <div class="icon">🔒</div>
   <h2>Survey Already Submitted</h2>
-  <p>You have already completed this survey.<br>Each person can only submit once.<br><br>Thank you for your participation!</p>
+  <p>You have already completed this survey.<br>Each person can only submit once.<br><br>Thank you for your participation!Prepared by Muzamil HR</p>
 </div>
 
 <!-- MAIN CONTENT -->
@@ -621,7 +621,7 @@
 <div class="intro-card">
   <div class="intro-inner">
     <h2>Purpose of This Survey</h2>
-    <p>This survey is designed to measure how engaged, satisfied, and motivated our employees are at Six-B Food Industries. Your honest feedback helps our leadership team understand your workplace experience, identify areas of strength, and implement improvements that benefit everyone.</p>
+    <p>This survey aims to understand employees’ overall experience at Six-B Food Industries by gathering feedback on key areas such as job satisfaction, management, teamwork, communication, growth opportunities, compensation, work-life balance, and workplace culture. It is designed to capture how employees feel about their roles, responsibilities, and the support they receive from the organization. Identifies strengths and areas for improvement, helping management make better decisions and improve policies. Its goal is to boost employee engagement, satisfaction, and create a more positive and productive work environment.</p>
     <p><strong style="color:#fff;">All responses are completely confidential and anonymous.</strong> Please answer every question as honestly as possible.</p>
     <div class="intro-meta">
       <span class="meta-badge orange">🔒 Fully Confidential</span>
@@ -689,9 +689,9 @@
       <div class="field-group">
         <label class="field-label">Work Location</label>
         <div class="pill-group">
-          <label class="pill-option"><input type="radio" name="work_location" value="Factory/Plant"><span class="dot"></span>Factory / Plant</label>
-          <label class="pill-option"><input type="radio" name="work_location" value="Warehouse"><span class="dot"></span>Warehouse</label>
-          <label class="pill-option"><input type="radio" name="work_location" value="Office"><span class="dot"></span>Office</label>
+          <label class="pill-option"><input type="radio" name="work_location" value="Office"><span class="dot"></span>Factory / Plant</label>
+          <label class="pill-option"><input type="radio" name="work_location" value="Factory/Plant"><span class="dot"></span>Warehouse</label>
+          <label class="pill-option"><input type="radio" name="work_location" value="Sales Team"><span class="dot"></span>Office</label>
           <label class="pill-option"><input type="radio" name="work_location" value="Field/Remote"><span class="dot"></span>Field / Remote</label>
         </div>
       </div>
@@ -830,7 +830,7 @@
         <textarea name="q41" class="field-input" rows="3" placeholder="Share what challenges you face in your workplace…"></textarea>
       </div>
       <div class="field-group">
-        <label class="field-label">Q42. What is one thing you would change to improve your work experience at Six-B?</label>
+        <label class="field-label">Q42. If you could change one thing about the workplace,what would it be?</label>
         <textarea name="q42" class="field-input" rows="3" placeholder="Be specific — every suggestion counts…"></textarea>
       </div>
       <div class="field-group">
@@ -885,7 +885,7 @@
     <div class="thankyou-icon">🌟</div>
     <h2>Thank You for Your Participation!</h2>
     <p>Your feedback is invaluable to the continued growth and success of <strong style="color:#fff;">Six-B Food Industries</strong>.</p>
-    <p>Results will be reviewed by HR and shared with leadership to drive meaningful change. Your voice truly matters.</p>
+    <p>Results will be reviewed by HR and shared with leadership to drive meaningful change. Your voice truly matters.Prepared by Muzamil HR.</p>
     <div class="thankyou-divider"></div>
     <div class="thankyou-note">🔒 Your response has been recorded securely and anonymously.</div>
   </div>
@@ -899,7 +899,7 @@
 //  GOOGLE SHEETS CONFIG
 //  Apna Google Apps Script URL yahan paste karein
 // ══════════════════════════════════════════════
-const GOOGLE_SHEET_URL = ''; // <-- yahan apna Apps Script URL paste karein
+const GOOGLE_SHEET_URL = 'https://script.google.com/macros/s/AKfycby3su2ryhkcEDkEnbh8dFsE3YXF4vSdbL1je1yWC9PwM4O57ZPpUsqN9mJI1GYERFx8/exec'; // <-- yahan apna Apps Script URL paste karein
 
 // ══════════════════════════════════════════════
 //  ONE-TIME SUBMISSION CHECK
@@ -916,7 +916,7 @@ const SECTIONS = {
   b: { id: 'likert-b', questions: [
     { n: 'q1',  text: "Q1. I'm satisfied with my current designation and responsibilities." },
     { n: 'q2',  text: "Q2. I feel confident about the job security." },
-    { n: 'q3',  text: "Q3. I clearly understand what is expected of me in my job." },
+    { n: 'q3',  text: "Q3. I clearly understand what is expected from me in my job." },
     { n: 'q4',  text: "Q4. My workload is manageable and reasonable." },
     { n: 'q5',  text: "Q5. I feel my work contributes to Six-B success." }
   ]},
