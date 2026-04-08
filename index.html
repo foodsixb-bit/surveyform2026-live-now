@@ -692,7 +692,7 @@
           <label class="pill-option"><input type="radio" name="work_location" value="Office"><span class="dot"></span>Office</label>
           <label class="pill-option"><input type="radio" name="work_location" value="Factory/Plant"><span class="dot"></span>Factory/Plant</label>
           <label class="pill-option"><input type="radio" name="work_location" value="Sales Team"><span class="dot"></span>Sales Team</label>
-          <label class="pill-option"><input type="radio" name="work_location" value="Field/Remote"><span class="dot"></span>Field / Remote</label>
+          <label class="pill-option"><input type="radio" name="work_location" value="Work from Home/Remote"><span class="dot"></span>Work from Home / Remote</label>
         </div>
       </div>
     </div>
@@ -826,20 +826,16 @@
     </div>
     <div class="section-body">
       <div class="field-group">
-        <label class="field-label">Q41. What challenges or difficulties do you face in Six-B?</label>
-        <textarea name="q41" class="field-input" rows="3" placeholder="Share what challenges you face in your workplace…"></textarea>
+        <label class="field-label">Q32. What challenges or difficulties do you face in Six-B?</label>
+        <textarea name="q32" class="field-input" rows="3" placeholder="Share what challenges you face in your workplace…"></textarea>
       </div>
       <div class="field-group">
-        <label class="field-label">Q42. If you could change one thing about the workplace,what would it be?</label>
-        <textarea name="q42" class="field-input" rows="3" placeholder="Be specific — every suggestion counts…"></textarea>
+        <label class="field-label">Q33. Please give examples of tasks or steps that could be improved to make your work easier?</label>
+        <textarea name="q33" class="field-input" rows="3" placeholder="Tasks, processes, tools, or steps that need improvement…"></textarea>
       </div>
       <div class="field-group">
-        <label class="field-label">Q43. Please give examples of tasks or steps that could be improved to make your work easier?</label>
-        <textarea name="q43" class="field-input" rows="3" placeholder="Tasks, processes, tools, or steps that need improvement…"></textarea>
-      </div>
-      <div class="field-group">
-        <label class="field-label">Q44. Do you have any comments, suggestions, or concerns for management?</label>
-        <textarea name="q44" class="field-input" rows="3" placeholder="Any additional thoughts you'd like to share…"></textarea>
+        <label class="field-label">Q34. Do you have any comments, suggestions, or concerns for management?</label>
+        <textarea name="q34" class="field-input" rows="3" placeholder="Any additional thoughts you'd like to share…"></textarea>
       </div>
     </div>
   </div>
@@ -919,58 +915,49 @@ const SECTIONS = {
     { n: 'q2',  text: "Q2. I feel confident about the job security." },
     { n: 'q3',  text: "Q3. I clearly understand what is expected from me in my job." },
     { n: 'q4',  text: "Q4. My workload is manageable and reasonable." },
-    { n: 'q5',  text: "Q5. I feel my work contributes to Six-B success." }
   ]},
   c: { id: 'likert-c', questions: [
-    { n: 'q6',  text: "Q6. My immediate supervisor treats me with fairness and respect." },
-    { n: 'q7',  text: "Q7. Higher management support favoritism and politics." },
-    { n: 'q8',  text: "Q8. Multiple reporting create insecurities and fear." },
-    { n: 'q9',  text: "Q9. Senior management genuinely cares about employees' health and grievance issues." },
-    { n: 'q10', text: "Q10. Leadership roles are assigned fairly based on merit, qualifications, and experience." }
+    { n: 'q5',  text: "Q5. My immediate supervisor treats me with fairness and respect." },
+    { n: 'q6',  text: "Q6. Multiple reporting create insecurities and fear." },
+    { n: 'q7',  text: "Q7. Senior management genuinely cares about employees' health and grievance issues." },
+    { n: 'q8', text: "Q8. Leadership roles are assigned fairly based on merit, qualifications, and experience." }
   ]},
   d: { id: 'likert-d', questions: [
-    { n: 'q11', text: "Q11. I work well with my colleagues and team members." },
-    { n: 'q12', text: "Q12. There is a strong sense of teamwork and collaboration in my department." },
-    { n: 'q13', text: "Q13. Information and updates are shared openly and in a timely manner." },
-    { n: 'q14', text: "Q14. I feel comfortable sharing ideas, concerns, or suggestions." },
-    { n: 'q15', text: "Q15. Conflicts within the team are handled constructively." }
+    { n: 'q9', text: "Q9. I work well with my colleagues and team members." },
+    { n: 'q10', text: "Q10. There is a strong sense of teamwork and collaboration in my department." },
+    { n: 'q11', text: "Q11. I feel comfortable sharing ideas, concerns, or suggestions." },
+    { n: 'q12', text: "Q12. Conflicts within the team are handled constructively." }
   ]},
   e: { id: 'likert-e', questions: [
-    { n: 'q16', text: "Q16. Learning and development is not a priority in my company." },
-    { n: 'q17', text: "Q17. I have access to the training I need to perform my job well." },
-    { n: 'q18', text: "Q18. My manager encourages and guides me in improving my skills." },
-    { n: 'q19', text: "Q19. I see a clear career path for myself at Six-B Food Industries." },
-    { n: 'q20', text: "Q20. The organization invests in employee development programs." }
+    { n: 'q13', text: "Q13. Learning and development is not a priority in my company." },
+    { n: 'q14', text: "Q14. I have access to the training I need to perform my job well." },
+    { n: 'q15', text: "Q15. My manager encourages and guides me in improving my skills." },
+    { n: 'q16', text: "Q16. I see a clear career path for myself at Six-B Food Industries." },
   ]},
   f: { id: 'likert-f', questions: [
-    { n: 'q21', text: "Q21. My contributions and efforts are recognized and appreciated." },
-    { n: 'q22', text: "Q22. Bonuses, incentives, and rewards are distributed fairly and transparently." },
-    { n: 'q23', text: "Q23. My compensation (salary/wages) is fair according to my job." },
-    { n: 'q24', text: "Q24. The benefits offered meet my needs and expectations." },
-    { n: 'q25', text: "Q25. Management treats high-performing employees fairly and equitably." }
+    { n: 'q17', text: "Q17. My contributions and efforts are recognized and appreciated." },
+    { n: 'q18', text: "Q18. Bonuses, incentives, and rewards are distributed fairly and transparently." },
+    { n: 'q19', text: "Q19. My compensation (salary/wages) is fair according to my job." },
+    { n: 'q20', text: "Q20. The benefits offered meet my needs and expectations." },
   ]},
   g: { id: 'likert-g', questions: [
-    { n: 'q26', text: "Q26. I am able to maintain a healthy balance between work and personal life." },
-    { n: 'q27', text: "Q27. Six-B supports my physical and mental well-being." },
-    { n: 'q28', text: "Q28. The company provides support during personal or family emergencies." },
-    { n: 'q29', text: "Q29. My working hours and break times are reasonable." },
-    { n: 'q30', text: "Q30. I feel comfortable taking leave when I need it." }
+    { n: 'q21', text: "Q21. I am able to maintain a healthy balance between work and personal life." },
+    { n: 'q22', text: "Q22. The company provides support during personal or family emergencies." },
+    { n: 'q23', text: "Q23. My working hours and break times are reasonable." },
+    { n: 'q24', text: "Q24. I feel comfortable taking leave when I need it." }
   ]},
   h: { id: 'likert-h', questions: [
-    { n: 'q31', text: "Q31. My workplace is clean, safe, and well-maintained." },
-    { n: 'q32', text: "Q32. I feel safe at work every day." },
-    { n: 'q33', text: "Q33. I hesitate to share my ideas or advice because it may be viewed negatively." },
-    { n: 'q34', text: "Q34. Unprofessional behavior is sometimes overlooked by management." },
-    { n: 'q35', text: "Q35. Political behavior (e.g., favoritism, hidden agendas) is a concern in my workplace." }
+    { n: 'q25', text: "Q25. My workplace is clean, safe, and well-maintained." },
+    { n: 'q26', text: "Q26. I hesitate to share my ideas or advice because it may be viewed negatively." },
+    { n: 'q27', text: "Q27. Unprofessional behavior is sometimes overlooked by management." },
+    { n: 'q28', text: "Q28. Political behavior (e.g., favoritism, hidden agendas) is a concern in my workplace." }
   ]}
 };
 
 const YN_QUESTIONS = [
-  { n: 'q36', text: "Q36. Do you feel respected by your colleagues and managers?" },
-  { n: 'q37', text: "Q37. Do you receive regular feedback from your manager on your work?" },
-  { n: 'q38', text: "Q38. Would you recommend Six-B Food Industries as a great place to work?" },
-  { n: 'q39', text: "Q39. Six-B Food Industries provides equal and fair opportunities for career advancement to all employees?" },
-  { n: 'q40', text: "Q40. I am confident that the feedback I provide in this survey will be used to drive meaningful improvements at Six-B?" }
+  { n: 'q29', text: "Q29. Do you feel respected by your colleagues and managers?" },
+  { n: 'q30', text: "Q30. Do you receive regular feedback from your manager on your work?" },
+  { n: 'q31', text: "Q31. Six-B Food Industries provides equal and fair opportunities for career advancement to all employees?" },
 ];
 
 // ══════════════════════════════════════════════
